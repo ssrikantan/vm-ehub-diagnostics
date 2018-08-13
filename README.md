@@ -211,6 +211,6 @@ This command should return a JSON Response indicating a successful installation.
 3. Navigate to the Event Hub configured above. You should see the incoming telematry in the 'Messages' part of the Monitoring blade.
 <img src="./images/EventHubMonitor.PNG" alt="drawing" height="500px"/>
 
-4. Navigate to the Azure Function created earlier. In the logs  section of the Function App, you should see the telemtry flowing in
+4. Navigate to the Azure Function created earlier. In the logs  section of the Function App, you should see the telemetry flowing in
 
 <img src="./images/vmdiagnostics.PNG" alt="drawing" height="500px"/>
