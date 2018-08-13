@@ -1,0 +1,17 @@
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\EHClientApp.exe.config
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\EHClientApp.exe
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\EHClientApp.pdb
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.Azure.Services.AppAuthentication.dll
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.ServiceBus.dll
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.Azure.Services.AppAuthentication.xml
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\Microsoft.ServiceBus.xml
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\obj\Debug\EHClientApp.csprojResolveAssemblyReference.cache
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\obj\Debug\EHClientApp.csproj.CoreCompileInputs.cache
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\obj\Debug\EHClientApp.exe
+c:\users\srikantansurface\source\repos\EHClientApp\EHClientApp\obj\Debug\EHClientApp.pdb

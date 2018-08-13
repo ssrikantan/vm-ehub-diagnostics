@@ -1,0 +1,17 @@
+{
+    "storageAccountName": "vmdianglogstore",
+    "storageAccountSasToken": "sv=2017-11-09&ss=bt&srt=co&sp=rwdlacu&se=2019-08-12T20:34:02Z&st=2018-08-12T12:34:02Z&spr=https&sig=MnpuYVt.........",
+    "sinksConfig": {
+        "sink": [
+            {
+                "name": "vmsehubsink",
+                "type": "EventHub",
+                "sasURL": "https://insightsehub.servicebus.windows.net/vmdiaglogsink?sr=insightsehu........."
+            },
+            {
+                "name": "vmsblobsink",
+                "type": "JsonBlob"
+            }
+        ]
+    }
+}
