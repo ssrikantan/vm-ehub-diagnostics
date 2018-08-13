@@ -8,7 +8,7 @@ These steps are described in detail [here](https://docs.microsoft.com/en-us/azur
 2. Generate a SAS Token with permissions to send messages to this Event Hub Endpoint
 
 Choose from any of these methods [here](https://docs.microsoft.com/en-us/rest/api/eventhub/generate-sas-token) to generate a SAS Token.
-I have used a .NET Framework 4.6.1 Console Program to generate this SAS TOken
+I have used a .NET Framework 4.6.1 Console Program to generate this SAS Token
 ````
 using Microsoft.ServiceBus;
 using Microsoft.ServiceBus.Messaging;
@@ -70,6 +70,13 @@ namespace EHClientApp
     }
 
 ````
+The SAS Token generated would have this form
+"SharedAccessSignature sr=%2f%2finsightsehub.servicebus.windows.net%2fvmdiaglogsink%2fpublishers%2fvmlogger&sig=<gibberish>se=<somenumber>&skn=EventHubSendKey"
+
+This has to be changed to a Https SAS Token URL before it can be used by the VM Diganostic agent. Remove 'SharedAccessSignature' from it and prefix it with 'https://<your event hub namespace>/<your event hub endpoint>?'. 
+The SAS Token URL should look like:
+
+https://insightsehub.servicebus.windows.net/vmdiaglogsink?sr=insightsehub.servicebus.windows.net%2fvmdiaglogsink&sig=<some gibberish>&se=<some number>&skn=EventHubSendKey
 
 ## Create an Azure Function and configure an input trigger binding on the Event Hub configured above
 Create a new Azure Function App (version 1.x is used in this example) and configure an input trigger on the Event Hub created in the earlier steps. This link https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function pertains to configuring a HTTP Trigger, but the steps for Event Hub input triggers are similar.
