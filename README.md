@@ -5,6 +5,7 @@ Sample that demonstrates the use of Azure Event Hubs as a sink for streaming Dia
 1. Create the Event Hub Namespace and an Event Hub endpoint in it
 
 These steps are described in detail [here](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-portal)
+
 2. Generate a SAS Token with permissions to send messages to this Event Hub Endpoint
 
 Choose from any of these methods [here](https://docs.microsoft.com/en-us/rest/api/eventhub/generate-sas-token) to generate a SAS Token.
@@ -93,3 +94,7 @@ This is where the streaming Diagnostics from Azure VMs would be sent to, in addi
 2. Generate a SAS Token for the Storage Account
 
 This token would be used by the Diagnostic agent to connect to the Azure Storage account and write the logs. Refer to this link [here](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/diagnostics-linux#installing-and-configuring-lad-30-via-cli) that demonstrates how the Azure portal could be used to generate the SAS Token.
+The SAS Token should look something like
+````
+sv=2017-11-09&ss=bt&srt=co&sp=rwdlacu&se=2019-08-12T20:34:02Z&st=2018-08-12T12:34:02Z&spr=https&sig=<some code>
+````
