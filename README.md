@@ -7,5 +7,9 @@ These steps are described here - https://docs.microsoft.com/en-us/azure/event-hu
 ## Create an Azure Function and configure an input trigger binding on the Event Hub configured above
 Create a new Azure Function App (version 1.x is used in this example) and configure an input trigger on the Event Hub created in the earlier steps. This link https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function pertains to configuring a HTTP Trigger, but the steps for Event Hub input triggers are similar.
 
-## Create a Storage Account in Azure where the streaming Diagnostics from Azure VMs would be sent to, in addition to Azure Event Hubs
-These steps are described [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=portal)
+## Create a Storage Account in Azure as a sink for diagnostic logs
+1. Configure an Azure Storage Account
+This is where the streaming Diagnostics from Azure VMs would be sent to, in addition to Azure Event Hubs. These steps are described [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=portal)
+
+2. Generate a SAS Token for the Storage Account
+This token would be used by the Diagnostic agent to connect to the Azure Storage account and write the logs. Refer to this link [here](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/diagnostics-linux#installing-and-configuring-lad-30-via-cli) that demonstrates how the Azure portal could be used to generate the SAS Token
