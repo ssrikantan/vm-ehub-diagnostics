@@ -200,7 +200,7 @@ az vm extension set --publisher Microsoft.Azure.Diagnostics --name LinuxDiagnost
 
 This command should return a JSON Response indicating a successful installation.
 
-### Verify the successful configuration
+### Verify the configuration
 
 1. Navigate to the VM in Azure portal, and in the 'Diagnostic Settings' blade, you should be able to see the Storage account configured through the steps above, along with the metrics and log configurations
 
