@@ -72,7 +72,7 @@ namespace EHClientApp
 ````
 The SAS Token generated would have this form
 ````
-"SharedAccessSignature sr=%2f%2finsightsehub.servicebus.windows.net%2fvmdiaglogsink%2fpublishers%2fvmlogger&sig=<some code>se=<somenumber>&skn=EventHubSendKey"
+"SharedAccessSignature sr=insightsehub.servicebus.windows.net%2fvmdiaglogsink%2fpublishers%2fvmlogger&sig=<some code>se=<somenumber>&skn=EventHubSendKey"
 ````
 This has to be changed to a Https SAS Token URL before it can be used by the VM Diganostic agent. Remove 'SharedAccessSignature' from it and prefix it with 
 ````
