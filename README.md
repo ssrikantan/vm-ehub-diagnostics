@@ -130,7 +130,7 @@ This file contains sensitive information related to connections to Event Hubs an
 Two sinks are configured above, one to stream to Event Hubs and the other to a JsonBlob Store in Azure
 
 ### Create the PortalPublicSettings.json for the diagnostic agent
-A preconfigured JSON Document that contains all the configuration options to capture Syslog, performance metrics, etc can be downloaded from this link [here](https://raw.githubusercontent.com/Azure/azure-linux-extensions/master/Diagnostic/tests/lad_2_3_compatible_portal_pub_settings.json -O portal_public_settings.json)
+A preconfigured JSON Document that contains all the configuration options to capture Syslog, performance metrics, etc can be downloaded from this link [here](https://raw.githubusercontent.com/Azure/azure-linux-extensions/master/Diagnostic/tests/lad_2_3_compatible_portal_pub_settings.json)
 
 Download this file to the same location as the PrivateConfig.json file created above. Make the following changes to it.
 
