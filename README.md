@@ -102,7 +102,7 @@ sv=2017-11-09&ss=bt&srt=co&sp=rwdlacu&se=2019-08-12T20:34:02Z&st=2018-08-12T12:3
 ````
 ## Installing and configuring diagnostic agent on the Linux VM in Azure
 In order to stream diagnostics to Event Hubs from Azure VMs, version 3.0 of the Linux Diagnostics extension is required. Refer to the article [here](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/diagnostics-linux#installing-and-configuring-lad-30-via-cli) for details. 
-Refer to this article [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/classic/diagnostic-extension-v2?toc=%2Fazure%2Fvirtual-machines%2Flinux%2Fclassic%2Ftoc.json) that talks aof enabling the extension and creating the Public Settings and Private settings json files (it refers to the previous version of the extension, refer to it only to understand how these config setting files need to be created)
+Refer to this article [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/classic/diagnostic-extension-v2?toc=%2Fazure%2Fvirtual-machines%2Flinux%2Fclassic%2Ftoc.json) that talks aof enabling the extension and creating the Public Settings and Private settings json files (it pertains to the previous version of the extension, refer to it only to understand how these config setting files need to be created)
 
 Create the PortalPublicSettings.json and PrivateConfig.json files and store them on your local computer. You will need to point to that location when running the CLI Command to install the extension subsequently.
 
