@@ -134,7 +134,7 @@ A preconfigured JSON Document that contains all the configuration options to cap
 
 Download this file to the same location as the PrivateConfig.json file created above. Make the following changes to it.
 
-1. Add the Storage Account Name, and comma separated names of the 2 sinks that are referred in the PrivateConfig.json above. For example, in this example:
+1. Add the Storage Account Name, and comma separated names of the 2 sinks that are referred in the PrivateConfig.json above. See below:
 ````
 {
   "StorageAccount": "vmdianglogstore",
