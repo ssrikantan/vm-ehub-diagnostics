@@ -1,7 +1,7 @@
 # vm-ehub-diagnostics
 
 In this [Github repo](https://github.com/ssrikantan/logs-ehub-sink) I have shown how we could stream diagnostics from different Azure Services to Event Hubs. We cannot however use that approach for diagnostic logs from Azure VMs. 
-This article demonstrates the use of Azure Event Hubs to ingest streaming Diagnostic Logs from Linux Azure Virtual Machines. Azure Functions is configured as the Event Hub Consumer that logs the incoming log stream to console. Azure Storage is used as an additional endpoint where the logs are streamed to.  
+This article demonstrates the use of Azure Event Hubs to ingest streaming Diagnostic Logs from Linux Azure Virtual Machines. Azure Functions is configured as the Event Hub Consumer that logs the incoming stream to console. Azure Storage is used as an additional endpoint where the logs are streamed to.  
 
 ## Create an Azure Event Hub end point and generate a SAS Token
 1. Create the Event Hub Namespace and an Event Hub endpoint in it
